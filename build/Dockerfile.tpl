@@ -1,7 +1,5 @@
 FROM node:${NODE_VERSION}-alpine
 
-RUN npm i -g yarn
-
 RUN mkdir -p /app
 
 WORKDIR /app
