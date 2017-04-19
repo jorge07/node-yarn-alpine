@@ -13,5 +13,5 @@ for v in $"${VERSIONS[@]}"; do
     mkdir -p $DOCKER_PATH$v || true # Ignore if exist before
 
     export NODE_VERSION=$v
-    envsubst <Dockerfile.tpl> "$DOCKER_PATH$v/$DOCKERFILE_NAME"
+    envsubst '${NODE_VERSION}' <Dockerfile.tpl> "$DOCKER_PATH$v/$DOCKERFILE_NAME"
 done
