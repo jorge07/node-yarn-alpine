@@ -2,7 +2,7 @@
 
 DOCKER_PATH=../
 
-VERSIONS=(4.8 6.10 7.9)
+VERSIONS=(6.10 7.9)
 
 DOCKERFILE_NAME=Dockerfile.onbuild
 
