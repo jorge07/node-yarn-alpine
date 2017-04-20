@@ -7,11 +7,11 @@ WORKDIR /app
 ONBUILD ARG NODE_ENV
 ONBUILD ENV NODE_ENV $NODE_ENV
 
-ONBUILD COPY package.json /usr/src/app/
-ONBUILD COPY yarn.lock /usr/src/app/
+ONBUILD COPY package.json /app/
+ONBUILD COPY yarn.lock /app/
 
 ONBUILD RUN yarn install && yarn cache clean
 
-ONBUILD COPY . /usr/src/app
+ONBUILD COPY . /app
 
 CMD [ "yarn", "start" ]
