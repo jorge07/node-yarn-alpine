@@ -14,4 +14,6 @@ ONBUILD RUN yarn install && yarn cache clean
 
 ONBUILD COPY . /app
 
+ONBUILD RUN yarn build
+
 CMD [ "yarn", "start" ]
