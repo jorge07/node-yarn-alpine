@@ -5,7 +5,7 @@ DOCKER_PATH=../
 VERSIONS=(6.10 7.9)
 
 DOCKERFILE_NAME=Dockerfile.onbuild
-DOCKERFILE_MILTI_STAGE_NAME=Dockerfile.multi-stage-compile
+DOCKERFILE_MILTI_STAGE_NAME=Dockerfile.multi-stage
 DOCKERFILE_BUILD_NAME=Dockerfile.onbuild-compile
 
 for v in $"${VERSIONS[@]}"; do
